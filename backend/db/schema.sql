@@ -1,5 +1,4 @@
--- Task Manager Database Schema
--- Run this file to create the database and the tasks table.
+
 
 CREATE DATABASE IF NOT EXISTS task_manager;
 USE task_manager;
@@ -12,7 +11,7 @@ CREATE TABLE IF NOT EXISTS tasks (
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Optional: a few sample rows so the dashboard isn't empty on first run
+
 INSERT INTO tasks (title, description, status) VALUES
 ('Set up project repo', 'Initialize git repo and push starter code', 'Completed'),
 ('Design database schema', 'Create tasks table with required fields', 'Completed'),

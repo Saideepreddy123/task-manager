@@ -1,4 +1,4 @@
-// MySQL connection pool setup using mysql2
+
 const mysql = require('mysql2');
 require('dotenv').config();
 
@@ -12,7 +12,7 @@ const pool = mysql.createPool({
   queueLimit: 0
 });
 
-// Use the promise-based wrapper so we can use async/await in controllers
+
 const promisePool = pool.promise();
 
 module.exports = promisePool;
